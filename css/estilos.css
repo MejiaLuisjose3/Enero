@@ -1,0 +1,381 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.4em;
+}
+
+/*--------------------------------------------------
+anchura del sitio
+--------------------------------------------------*/
+.contenedor{
+	width: 980px;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------
+Encabezado
+--------------------------------------------------*/
+.encabezado{
+	background: #2c2c2c;
+	overflow: hidden;
+}
+.logo{
+	float: left;
+	position: relative;
+	top: 7px;
+}
+.encabezado nav{
+	float: right;
+}
+.encabezado nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.encabezado nav ul li{
+	display: inline-block;
+	margin-right: -4px;
+}
+.encabezado nav ul li a{
+	display: block;
+	color: #fff;
+	padding: 28px;
+	border-left: 1px solid #696969;
+	text-decoration: none;
+}
+.encabezado nav ul li a:hover{
+	background: #575757;
+}
+/*--------------------------------------------------
+Presentacion
+--------------------------------------------------*/
+.presentacion
+{
+	/*overflow: hidden;*/
+	background: radial-gradient(280px at 25% 10%, #A3D4FF, #0460ad);
+	/*background: blue;*/
+}
+.introduccion-presentacion
+{	
+	display: inline-block;
+}
+
+.introduccion-presentacion h1
+{
+	color: #fff;
+	font-size: 2.625em;
+	text-shadow: 1px 1px 0px #090909;
+	margin-top: 70px;
+	margin-bottom: 40px;
+	margin-left: 10px;
+	line-height: 0.7em;
+}
+.introduccion-presentacion h1 span
+{
+	font-size: 16px;
+}
+
+.aprender-mas
+{
+	font-size: 2.1875em;
+	border: 1px solid #0d5c25;
+	padding: 30px 50px;
+	display: block;
+	text-align: center;
+	margin: 10px 40px 55px;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #000;
+	border-radius: 10px;
+	background:linear-gradient(to top, #319b41, #21c653);
+	box-shadow: 0 8px 0 #20372f;
+}
+
+.aprender-mas:hover
+{
+	box-shadow: 0 8px 0 #20372f, 
+	0 0 25px 5px #fff;
+}
+.presentacion img
+{
+	float: right;
+	position: relative;
+	top: 15px;
+}
+/*--------------------------------------------------
+Acceso Rapido
+--------------------------------------------------*/
+.acceso-rapido
+{
+	background: #21bc4e;
+	overflow: hidden;
+	border-bottom: 3px solid #1c943f;
+}
+.acceso-rapido h2
+{
+	color: #fff;
+	font-size: 1.875em;
+	text-shadow: 1px 1px 1 #000;
+	text-align: center;
+	border-bottom: 3px solid #fff;
+	padding-bottom: 16px;
+}
+
+.acceso-rapido figure
+{
+	display:inline-block;
+	text-align: center;
+	width: 25%;
+	margin: 0 -4px  0 0;
+	padding: 0px; 
+
+}
+
+.acceso-rapido h3
+{
+	font-size: 2.1875em; 
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.acceso-rapido h3 a
+{
+	color: #fff;
+	text-shadow: 1px 1px 0 #000;
+	font-weight: normal;
+
+}
+
+.acceso-rapido h3 a:hover
+{
+	text-decoration: none;
+}
+/*--------------------------------------------------
+Bloque Contenido
+--------------------------------------------------*/
+.contenido
+{
+	overflow: hidden;
+	margin-top: 25px;
+}
+.contenido .contenedor
+{
+	display: table;
+}
+.articulos
+{
+	width: 65%;
+	display: table-cell;
+	padding-right: 30px;
+}
+.articulos article
+{
+	margin-bottom: 10px;
+}
+.articulos h2
+{
+	color: #344444;
+	font-size: 1.625em;
+	border-bottom: 3px solid #4660ad;
+	padding-bottom: 25px;
+}
+.articulos img
+{
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	top:4px;
+}
+
+.articulos article h1
+{
+	font-size: 1.25em;
+	margin: 0 0 8px 0;
+}
+
+.articulos article h1 a
+{
+	color: #444444;
+	text-decoration: none;
+}
+.articulos article h1 a:hover
+{
+	text-decoration: underline;
+}
+
+.articulos article p
+{
+	margin: 0;
+	font-size: 0.875em;
+}
+/*--------------------------------------------------
+Complementario
+--------------------------------------------------*/
+.complementario
+{
+	background: #0460ad;
+	width: 35%;
+	display: table-cell;
+	padding: 0 20px 20px;
+
+}
+.complementario h2
+{
+	font-size: 1.625em;
+	color: #fff;
+	font-weight: normal;
+	text-align: center;
+}
+.complementario ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.complementario ul li
+{
+	background: url("../images/ico-evento.png")no-repeat left center;
+	padding-left: 25px;
+	margin-bottom: 7px;
+	margin-top: 28px;
+}
+
+.complementario ul li a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.complementario ul li a:hover
+{
+	text-decoration: underline;
+}
+/*--------------------------------------------------
+Suscripcion
+--------------------------------------------------*/
+.suscripcion
+{
+	overflow: hidden;
+	background: #eeeeee;
+	padding: 15px;
+	margin-top: 20px;
+}
+.suscripcion h2
+{
+	float: left;
+	font-size: 1.625em;
+	color: #444444;
+	font-weight: normal;
+}
+
+.suscripcion form 
+{
+	float: right;
+	position: relative;
+	top: 20px;
+
+}
+.suscripcion form  input
+{
+	border: 1px solid #cccccc;
+	padding: 10px;
+}
+.suscripcion form  input[type="submit"]
+{
+	background: #0460ad;
+	color: #fff;
+	border: 1px solid #22314d;
+	padding: 10px;
+	text-shadow: 1px 1px 0 #000;
+	box-shadow: 0 -1px 0px #93badc inset;
+}
+.suscripcion form  input[type="submit"]:hover
+{
+	background: #21bc4e;
+	cursor: pointer;
+}
+/*--------------------------------------------------
+Pie de pagina
+--------------------------------------------------*/
+.piedepagina
+{
+	background: #444444;
+	padding: 20px 0;
+}
+.piedepagina .contenedor
+{
+	display: table;
+}
+.piedepagina small
+{
+	display: table-cell;
+	color: #fff;
+}
+.piedepagina nav
+{
+	display: table-cell;
+	text-align: right;
+}
+.piedepagina nav ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.piedepagina nav ul li
+{
+	display: inline-block;
+	padding-left: 10px;
+}
+.piedepagina nav ul li a
+{
+	color: #fff;
+	text-decoration:none;
+}
+
+.piedepagina nav ul li a:hover
+{
+	text-decoration:underline;
+}
+/*--------------------------------------------------
+Redes
+--------------------------------------------------*/
+.social
+{
+	position: fixed;
+	top: 25%;
+	right: 0;
+}
+.social a
+{
+	display: block;
+	margin-bottom: 4px;
+	opacity: 0.8;
+}
+
+.social a:hover
+{
+	opacity: 1;
+}
+
+
+.social img
+{
+	border-radius: 50%;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
